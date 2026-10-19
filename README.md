@@ -1,17 +1,23 @@
-# ecommerce-ETL-pipeline
+# 🛒 E-Commerce Automated ETL Pipeline
 
-📌 Project Overview
-This project demonstrates an end-to-end, automated ETL (Extract, Transform, Load) pipeline built using Python, Pandas, and SQLite. The pipeline extracts raw transactional data from a Kaggle e-commerce dataset, applies data cleaning and transformation procedures, and loads the structured data into a local relational database (SQLite) for analytical query execution.
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Manipulation-150458?style=flat-square&logo=pandas)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=flat-square&logo=sqlite)
+![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?style=flat-square&logo=git)
+
+## 📌 Project Overview
+This project demonstrates an end-to-end, automated **ETL (Extract, Transform, Load)** pipeline built using Python, Pandas, and SQLite. The pipeline extracts raw transactional data from a Kaggle e-commerce dataset, applies data cleaning and transformation procedures, and loads the structured data into a local relational database (`SQLite`) for analytical query execution.
 
 The project strictly follows software engineering best practices for data engineering:
+* **Non-Destructive Workflow:** Preserves raw data immutability.
+* **Modular Pipeline Design:** Separates Extraction, Transformation, and Loading into logical steps.
+* **Production Readiness:** Configured with clean execution logs and relational schema persistence.
 
-Non-Destructive Workflow: Preserves raw data immutability.
+---
 
-Modular Pipeline Design: Separates Extraction, Transformation, and Loading into logical steps.
+## 🏗️ Architecture & Pipeline Workflow
 
-Production Readiness: Configured with clean execution logs and relational schema persistence.
-
-🏗️ Architecture & Pipeline Workflow
+```text
 [ Raw CSV Data ] ➡️ [ Extraction ] ➡️ [ Transformation & Cleaning ] ➡️ [ Loading ] ➡️ [ SQLite Warehouse ]
 🛠️ Tech Stack & Tools
 Programming Language: Python 3.x
@@ -49,7 +55,7 @@ Data Sanitization: Handled incomplete records safely to ensure downstream data i
 
 Data Structuring: Formatted data structures for seamless relational database ingestion.
 
-Artifact Export: Exported a intermediate cleaned snapshot (cleaned_ecommerce_sales.csv) for verification.
+Artifact Export: Exported an intermediate cleaned snapshot (cleaned_ecommerce_sales.csv) for verification.
 
 Phase 3: Loading 📤
 The cleaned and transformed dataset is persisted into a structured SQLite relational database (ecommerce_warehouse.db).
@@ -81,15 +87,17 @@ Execution
 Clone the repository:
 
 Bash
-git clone https://github.com/jannat-adel/ecommerce-ETL-pipeline.git
+git clone [https://github.com/jannat-adel/ecommerce-ETL-pipeline.git](https://github.com/jannat-adel/ecommerce-ETL-pipeline.git)
 cd ecommerce-ETL-pipeline
 Run the ETL pipeline:
 
 Bash
 python ecommerce.py
-
 👤 Author
-* **Jannat Adel Ibrahim Ali**
-* **Role:** Data Engineer **
-* **LinkedIn:** [linkedin.com/in/jannat-adel](https://linkedin.com/in/jannat-adel)
-* **GitHub:** [@jannat-adel](https://github.com/jannat-adel)
+Jannat Adel Ibrahim Ali
+
+Role: Data Engineer
+
+LinkedIn: linkedin.com/in/jannat-adel
+
+GitHub: @jannat-adel
